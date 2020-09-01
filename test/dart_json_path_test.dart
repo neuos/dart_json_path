@@ -35,6 +35,19 @@ void main() {
 
       expect(outPut, 'Agra');
     });
+  });
 
+  test('write at root', (){
+    var jsonPath = JsonPath.getInstance();
+    var myJSON =
+        '{"name":"vinay","age":31,"city":"New York","address":[{"city":"Agra"}]}';
+    var path = "\$.id";
+    var id = "123";
+
+    var outPut = jsonPath.write(myJSON, path, id);
+    print(outPut);
+
+    var writtenId = jsonPath.read(outPut, path);
+    expect(writtenId, id);
   });
 }
