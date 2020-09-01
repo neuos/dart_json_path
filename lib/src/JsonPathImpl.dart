@@ -10,18 +10,18 @@ class JsonPathImpl implements JsonPath {
 
   JsonPathImpl._internal();
 
-  static JsonPathImpl getInsatnce() {
+  static JsonPathImpl getInstance() {
     return _instance;
   }
 
   @override
   dynamic read(String json, String path) {
-    return JsonPathReader.getInsatnce().read(json, path);
+    return JsonPathReader.getInstance().read(json, path);
   }
 
   @override
   dynamic delete(String json, String path) {
-    return JsonPathDeleter.getInsatnce().delete(json, path);
+    return JsonPathDeleter.getInstance().delete(json, path);
   }
 
   @override
@@ -29,9 +29,9 @@ class JsonPathImpl implements JsonPath {
     try {
       var data;
       if (nodeValue == null) {
-        data = JsonPathDeleter.getInsatnce().delete(json, path);
+        data = JsonPathDeleter.getInstance().delete(json, path);
       } else {
-        data = JsonPathWriter.getInsatnce()
+        data = JsonPathWriter.getInstance()
             .write(json, path, nodeValue, update: update);
       }
       if (data == null) {

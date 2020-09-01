@@ -11,7 +11,7 @@ class JsonPathDeleter with JsonPathUtility {
     return _instance;
   }
 
-  static JsonPathDeleter getInsatnce() {
+  static JsonPathDeleter getInstance() {
     return _instance;
   }
 

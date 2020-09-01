@@ -14,7 +14,7 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 
-var jsonPath = JsonPath.getInsatnce();
+var jsonPath = JsonPath.getInstance();
   var myJSON = '{ "age":31, "city":"New York"}';
   var path = "\$.name.firstName";
   var nodeValue = "Vinay";
@@ -24,7 +24,7 @@ var jsonPath = JsonPath.getInsatnce();
   /// Output will be like this.
   /// {"age":31,"city":"New York","name":{"firstName":"Vinay"}}
 
-   var jsonPath = JsonPath.getInsatnce();
+   var jsonPath = JsonPath.getInstance();
   var myJSON = '{ "name" : "vinay", "age":31, "city":"New York"}';
   var path = "\$.address[0].city";
   var nodeValue = "Agra";
@@ -35,7 +35,7 @@ var jsonPath = JsonPath.getInsatnce();
   ///{"name":"vinay","age":31,"city":"New York","address":[{"city":"Agra"}]}
 
 
-  var jsonPath = JsonPath.getInsatnce();
+  var jsonPath = JsonPath.getInstance();
   var myJSON =
       '{"name":"vinay","age":31,"city":"New York","address":[{"city":"Agra"}]}';
   var path = "\$.address[0].city";

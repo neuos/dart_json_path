@@ -7,7 +7,7 @@ main() {
 }
 
 void writeJsonInArray() {
-  var jsonPath = JsonPath.getInsatnce();
+  var jsonPath = JsonPath.getInstance();
   var myJSON = '{ "name" : "vinay", "age":31, "city":"New York"}';
   var path = "\$.address[0].city";
   var nodeValue = "Agra";
@@ -19,7 +19,7 @@ void writeJsonInArray() {
 }
 
 void writeInJson() {
-  var jsonPath = JsonPath.getInsatnce();
+  var jsonPath = JsonPath.getInstance();
   var myJSON = '{ "age":31, "city":"New York"}';
   var path = "\$.name.firstName";
   var nodeValue = "Vinay";
@@ -31,7 +31,7 @@ void writeInJson() {
 }
 
 void readJson() {
-  var jsonPath = JsonPath.getInsatnce();
+  var jsonPath = JsonPath.getInstance();
   var myJSON =
       '{"name":"vinay","age":31,"city":"New York","address":[{"city":"Agra"}]}';
   var path = "\$.address[0].city";

@@ -12,7 +12,7 @@ class JsonPathReader with JsonPathUtility {
     return _instance;
   }
 
-  static JsonPathReader getInsatnce() {
+  static JsonPathReader getInstance() {
     return _instance;
   }
 

@@ -7,7 +7,7 @@ abstract class JsonPath {
 
   delete(String json, String path);
 
-  static JsonPath getInsatnce() {
-    return JsonPathImpl.getInsatnce();
+  static JsonPath getInstance() {
+    return JsonPathImpl.getInstance();
   }
 }

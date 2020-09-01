@@ -16,7 +16,7 @@ class JsonPathWriter with JsonPathUtility {
     return _instance;
   }
 
-  static JsonPathWriter getInsatnce() {
+  static JsonPathWriter getInstance() {
     return _instance;
   }
 
