@@ -44,7 +44,7 @@ class JsonPathWriter with JsonPathUtility {
     String node = splitPath.first;
     splitPath.removeAt(0);
 
-    if (_ifPathIsArray(splitPath.last)) {
+    if (splitPath.length<1 || _ifPathIsArray(splitPath.last)) {
       return jsonEncode(_addValueIntoMap(mainNode, node, nodeValue, splitPath));
     } else {
       Map<String, Object> updatedNodeValue = new Map();
